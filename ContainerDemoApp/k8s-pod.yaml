@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: helloworld-pod
+spec:
+  containers:
+  - name: helloworld
+    image: <<Your ACR Name>>.azurecr.io/containerdemoapp:1.0
+    imagePullPolicy: Always
+  restartPolicy: Never
